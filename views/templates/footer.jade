@@ -1,0 +1,61 @@
+div(class="footer")
+    div(class="container")
+        div(class="row")
+            
+            div(class="col-md-3")
+               img(style='max-width:200px; margin-top: 7px;', src="../images/me1.png")
+               // h2(class="title")="New letter"
+                //form(action="./")
+                    div(class="input-group")
+                        input(type="text" class="form-control" placeholder="Email")
+                        span(class="input-group-btn")
+                            button(class="btn btn-default" type="button")
+                                 i(class="glyphicon glyphicon-ok") 
+                    p="Recibe nuestroas actualizaciones directamente en tu correo electrónico"  
+            div(class="col-md-3")
+                h2(class="title")="Ultimas entradas"
+                ul
+                    li
+                        a(href="#")="Titulo de la entrada"
+                    li
+                        a(href="#")="Titulo de la entrada"
+                    li
+                        a(href="#")="Titulo de la entrada"
+                    li
+                        a(href="#")="Titulo de la entrada"
+                    li
+                        a(href="#")="Titulo de la entrada"
+                    li
+                        a(href="#")="Titulo de la entrada"
+            div(class="col-md-3")
+                h2(class="title")="Mapa del sitio"
+                if !isAuthenticated
+                    ul  
+                        li
+                            a(href="/")="Inicio"
+                        li
+                            a(href="/auth/signup")= 'Registrarse'
+                        li
+                            a(href="/auth/signin")= 'Iniciar Sesión'
+                if isAuthenticated
+                        li
+                            a(href="/users/panel")= 'Perfil'
+                        li
+                            a(href="/auth/logout")= 'Cerrar Sesion'
+            div(class="col-md-3")
+                h2(class="title")="Contacto"
+                p   
+                    i(class="glyphicon glyphicon-map-marker")="1600 amphitheatre perkway"
+                p="Mountain Vie, CA 94043"
+                p
+                    i(class="glyphicon glyphicon-earphone")="Phone: +1 650-253-0000"
+                
+div(class="copyright")
+    dic(class="container")
+        ul  
+            li
+                a(href="#")="Comunidad"
+            li
+                a(href="#")="Terminos de uso"
+            li
+                a(href="#")="Privacidad y condiciones"

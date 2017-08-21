@@ -1,0 +1,44 @@
+.footer{
+    background-color: #272d34;
+    color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;     
+}
+.footer .title{
+    font-size: 1.6em
+}
+.footer p{
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 8px
+}
+.footer ul{
+    margin-left: 0px
+}
+.footer ul li a{
+    color: #999;
+    display: block;
+    padding: 2px;
+}
+.copyright{
+    background-color: #1a1e23;
+    color: #777
+}
+.copyright ul{
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+    margin: 0px
+}
+.copyright ul li{
+    float: left;
+    margin-right: 16px
+}
+.copyright ul li a{
+    color: #fff
+}
+
+
+
+
+

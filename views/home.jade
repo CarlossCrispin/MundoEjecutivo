@@ -1,73 +1,13 @@
 extends templates/default
 
 block content
+  
   h3='Pagina de inicio'
     if isAuthenticated
       p='Bienvenido  ' + user.nombre
-    div(class='row')  
-      div(class='col-md-16 col-md-offset-0')
-        link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        .panels
-          .panel.panel1
-            p Interno
-            p Negocios
-            p Externo
-          .panel.panel2
-            p Marketing
-            p Management
-            p Digital
-          .panel.panel3
-            p Energía
-            p Sectores
-            p Financiero
-          .panel.panel4
-            p Tecnología
-            p Pymes
-            p Turismo
-          .panel.panel5
-            p Liderazgo
-            p RSE
-            p Empleo      
-        script(src="./images/panel.js")
-    div(class='contenedor')
-      #myCarousel.carousel.slide(data-ride='carousel')
-          // Indicators
-          ol.carousel-indicators
-            li.active(data-target='#myCarousel', data-slide-to='0')
-            li(data-target='#myCarousel', data-slide-to='1')
-            li(data-target='#myCarousel', data-slide-to='2')
-          // Wrapper for slides
-          .carousel-inner
-            .item.active
-              img(src='./images/6.jpg', alt='Los Angeles', style='width:100%;')
-            .item
-              img(src='./images/4.jpg', alt='Chicago', style='width:100%;')
-            .item
-              img(src='./images/5.jpg', alt='New york', style='width:100%;')
-          // Left and right controls
-          a.left.carousel-control(href='#myCarousel', data-slide='prev')
-            span.glyphicon.glyphicon-chevron-left
-            span.sr-only Previous
-          a.right.carousel-control(href='#myCarousel', data-slide='next')
-            span.glyphicon.glyphicon-chevron-right
-            span.sr-only Next
-            
-  
-  thead()
-  
-    tr
-      th  
-        div(class='row')
-          div(class='col-md-6 col-md-offset-3')
-            .container
-              .row
-                .col-sm-6
-                  h3 Las 100 Empresas más Importantes de México
-                    .embed-responsive.embed-responsive-16by9
-                      iframe.embed-responsive-item(src='https://www.youtube-nocookie.com/embed/aEdZzVTfhyE')
-                      .col-sm-
-
+    include templates/rainbow
+    include templates/carousel
+    include templates/video
 
                         
                         
