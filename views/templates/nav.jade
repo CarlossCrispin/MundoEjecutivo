@@ -5,12 +5,10 @@ nav#top-nav.navbar.navbar-inverse.top-navbar
   .container-fluid
     .navbar-header
       a.navbar-brand(rel='Inicio', href='/', title='Mundo Ejecutivo')
-        img.img-responsive(src="../images/me1.png", width='150', height='20')
-        a.sidebar-toggle(href='javascript:;')
-          i.fa.fa-bars
-        span#hide-btn.close-btn
-          i.fa.fa-times(aria-hidden='true')
-       
+        img.img-responsive(src="../images/me1.png", width='150', height='20')    
+    span#hide-btn.close-btn
+      i.fa.fa-times(aria-hidden='true')
+        
     ul(class="nav navbar-nav navbar-right")
       if !isAuthenticated
         li
@@ -19,20 +17,15 @@ nav#top-nav.navbar.navbar-inverse.top-navbar
           a(href="/auth/signin" class=" ")= '  Iniciar Sesión'
       if isAuthenticated
         li(class="dropdown")
-          
           a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
           aria-haspopup="true" aria-expanded="false" class="")= user.nombre
             span(class="caret")
-            ul(class="dropdown-menu")
-              li
-                a(href="/users/panel")='Perfil'
-              li
-                a(href="/auth/logout")= 'Cerrar Sesión'
-              li
-                a.sidebar-toggle(href='javascript:;')
-                  i.fa.fa-bars
-                span#hide-btn.close-btn
-                  i.fa.fa-times(aria-hidden='true')
+              ul(class="dropdown-menu")
+                li
+                  a(href="/users/panel")='Perfil'
+                li
+                  a(href="/auth/logout")= 'Cerrar Sesión'
+                    
         
 
     ul.social-icon.pull-right.list-inline

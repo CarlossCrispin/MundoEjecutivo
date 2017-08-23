@@ -2,6 +2,7 @@ extends ../templates/default
 
 block content
     if user.nombre == 'adm' && user.email == 'adm@adm'
-       include adm   
+      include adm
+        
     else 
       include user

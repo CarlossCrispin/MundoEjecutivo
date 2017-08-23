@@ -37,9 +37,9 @@ body{background-color: #ecf0f1;}
 }
 @media (min-width:768px){
 .container-1{width:15%;float:left;}
-.container-2{width:100%;float: left;}
+.container-2{width:100%;float: left;background-color: #CDC8C8}
 }
-
+.container-3{background-color:#CDC8C8}
 @media (max-width:768px){
 .container-1{width:100%;}
 .container-2{width:100%;}

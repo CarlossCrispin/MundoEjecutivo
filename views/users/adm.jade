@@ -1,14 +1,18 @@
 
+a.sidebar-toggle(href='javascript:;' style='font-size:28px;color:#2C3E50')
+  i.fa.fa-caret-square-o-down='  Deslizar Panel'
+span#hide-btn.close-btn
+  i.fa.fa-times(aria-hidden='true')
 #user-profil.container-1
   ul#side.nav.navbar-nav-1.side-nav
     li.side-user
       img.img-circle(src='../images/per.jpg')
-     p.welcome
-        i.fa.fa-key
-        |  Sesión de ...
-        a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-          aria-haspopup="true" aria-expanded="false" class="")= user.nombre +"  "
-          i.fa.fa-sign-out
+      p.welcome
+        i.fa.fa-key(style='font-size:18px;color:#fff') 
+          |  Sesión de ...
+      p
+        a(href="/users/panel" class="" style='font-size:28px;color:#fff')= user.nombre +"  "
+          i.fa.fa-caret-square-o-up
     li.nav-search
       form.navbar-form
         .input-group
@@ -17,7 +21,7 @@
             button.btn.btn-default(type='submit')
               i.glyphicon.glyphicon-search
     li.dashboard
-      a.active(href='#')
+      a.active(href='/users/panel')
         i.fa.fa-dashboard
         |  Tablero
     li.panel
@@ -124,7 +128,7 @@
       .col-md-12
         .page-title
           h2
-            | Dashboard
+            | cual es
             small Content Overview
           ol.breadcrumb
             li.active
@@ -145,7 +149,7 @@
             .circle-tile-description.text-faded
               | Users
             .circle-tile-number.text-faded
-              | 265
+              | pruebba
               span#sparklineA
             a.circle-tile-footer(href='#')
               | More Info 
@@ -232,22 +236,21 @@
                 br
                 | 12:43:17 PM
       .col-lg-9
-  // page-wrapper END
-// container-1 END
-script(src='js/jquery-3.1.1.js')
-script(src='js/bootstrap.js')
-script(type='text/javascript').
-  $(document).ready(function(){
-  $(".sidebar-toggle").click(function(){
-  $(this).hide();
-  $("#user-profil").show();
-  $("#hide-btn").show();
-  $(".container-2").css("width", "85%");
-  });
-  $("#hide-btn").click(function(){
-  $(this).hide();
-  $("#user-profil").hide();
-  $(".sidebar-toggle").show();
-  $(".container-2").css("width", "100%");
-  });
-  });
+      // page-wrapper END
+    // container-1 END
+    script(type='text/javascript').
+      $(document).ready(function(){
+      $(".sidebar-toggle").click(function(){
+      $(this).hide();
+      $("#user-profil").show();
+      $("#hide-btn").show();
+      $(".container-2").css("width", "85%");
+      });
+      $("#hide-btn").click(function(){
+      $(this).hide();
+      $("#user-profil").hide();
+      $(".sidebar-toggle").show();
+      $(".container-2").css("width", "100%");
+      });
+      });
+      
