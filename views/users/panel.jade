@@ -1,4 +1,7 @@
 extends ../templates/default
 
 block content
-    p='Hola...  ' +user.nombre
+    if user.nombre == 'adm' && user.email == 'adm@adm'
+       include adm   
+    else 
+      include user

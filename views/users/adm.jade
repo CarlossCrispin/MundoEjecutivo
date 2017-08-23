@@ -1,0 +1,253 @@
+
+#user-profil.container-1
+  ul#side.nav.navbar-nav-1.side-nav
+    li.side-user
+      img.img-circle(src='../images/per.jpg')
+     p.welcome
+        i.fa.fa-key
+        |  Sesión de ...
+        a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+          aria-haspopup="true" aria-expanded="false" class="")= user.nombre +"  "
+          i.fa.fa-sign-out
+    li.nav-search
+      form.navbar-form
+        .input-group
+          input.form-control(type='text', placeholder='Search')
+          .input-group-btn
+            button.btn.btn-default(type='submit')
+              i.glyphicon.glyphicon-search
+    li.dashboard
+      a.active(href='#')
+        i.fa.fa-dashboard
+        |  Tablero
+    li.panel
+      a(href='javascript:;', data-toggle='collapse', data-target='#charts')
+        i.fa.fa-bar-chart-o
+        |  carrucel 
+        i.fa.fa-caret-down.pull-right
+      ul#charts.collapse.nav
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  video
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Usuarios
+    li.panel
+      a(href='javascript:;', data-toggle='collapse', data-target='#calendar')
+        i.fa.fa-calendar
+        |  calendar 
+        i.fa.fa-caret-down.pull-right
+      ul#calendar.collapse.nav
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Datos de la empresa
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  graficas
+    li.panel
+      a(href='javascript:;', data-toggle='collapse', data-target='#clipboard')
+        i.fa.fa-clipboard
+        |  clipboard 
+        i.fa.fa-caret-down.pull-right
+      ul#clipboard.collapse.nav
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Flot Charts
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Morris.js
+    li.panel
+      a(href='javascript:;', data-toggle='collapse', data-target='#edit')
+        i.fa.fa-edit
+        |  edit 
+        i.fa.fa-caret-down.pull-right
+      ul#edit.collapse.nav
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Flot Charts
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Morris.js
+    li.panel
+      a(href='javascript:;', data-toggle='collapse', data-target='#inbox')
+        i.fa.fa-inbox
+        |  inbox 
+        i.fa.fa-caret-down.pull-right
+      ul#inbox.collapse.nav
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Flot Charts
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Morris.js
+    li.panel
+      a(href='javascript:;', data-toggle='collapse', data-target='#cogs')
+        i.fa.fa-cogs
+        |  cogs 
+        i.fa.fa-caret-down.pull-right
+      ul#cogs.collapse.nav
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Flot Charts
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Morris.js
+    li.panel
+      a(href='javascript:;', data-toggle='collapse', data-target='#paper')
+        i.fa.fa-paper-plane
+        |  paper 
+        i.fa.fa-caret-down.pull-right
+      ul#paper.collapse.nav
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Flot Charts
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Morris.js
+.container-2
+  #page-wrapper
+    .row
+      .col-md-12
+        .page-title
+          h2
+            | Dashboard
+            small Content Overview
+          ol.breadcrumb
+            li.active
+              i.fa.fa-dashboard
+              |  Dashboard
+            li.pull-right
+              #reportrange.btn.btn-green.btn-square.date-picker
+                i.fa.fa-calendar
+                span.date-range February 15, 2017 - March 16, 2017
+                i.fa.fa-caret-down
+    .row
+      .col-lg-2.col-sm-6
+        .circle-tile
+          a(href='#')
+            .circle-tile-heading.dark-blue
+              i.fa.fa-users.fa-fw.fa-3x
+          .circle-tile-content.dark-blue
+            .circle-tile-description.text-faded
+              | Users
+            .circle-tile-number.text-faded
+              | 265
+              span#sparklineA
+            a.circle-tile-footer(href='#')
+              | More Info 
+              i.fa.fa-chevron-circle-right
+      .col-lg-2.col-sm-6
+        .circle-tile
+          a(href='#')
+            .circle-tile-heading.green
+              i.fa.fa-money.fa-fw.fa-3x
+          .circle-tile-content.green
+            .circle-tile-description.text-faded
+              | Revenue
+            .circle-tile-number.text-faded
+              | $32,384
+            a.circle-tile-footer(href='#')
+              | More Info 
+              i.fa.fa-chevron-circle-right
+      .col-lg-2.col-sm-6
+        .circle-tile
+          a(href='#')
+            .circle-tile-heading.orange
+              i.fa.fa-bell.fa-fw.fa-3x
+          .circle-tile-content.orange
+            .circle-tile-description.text-faded
+              | Alerts
+            .circle-tile-number.text-faded
+              | 9 New
+            a.circle-tile-footer(href='#')
+              | More Info 
+              i.fa.fa-chevron-circle-right
+      .col-lg-2.col-sm-6
+        .circle-tile
+          a(href='#')
+            .circle-tile-heading.blue
+              i.fa.fa-tasks.fa-fw.fa-3x
+          .circle-tile-content.blue
+            .circle-tile-description.text-faded
+              | Tasks
+            .circle-tile-number.text-faded
+              | 10
+              span#sparklineB
+            a.circle-tile-footer(href='#')
+              | More Info 
+              i.fa.fa-chevron-circle-right
+      .col-lg-2.col-sm-6
+        .circle-tile
+          a(href='#')
+            .circle-tile-heading.red
+              i.fa.fa-shopping-cart.fa-fw.fa-3x
+          .circle-tile-content.red
+            .circle-tile-description.text-faded
+              | Orders
+            .circle-tile-number.text-faded
+              | 24
+              span#sparklineC
+            a.circle-tile-footer(href='#')
+              | More Info 
+              i.fa.fa-chevron-circle-right
+      .col-lg-2.col-sm-6
+        .circle-tile
+          a(href='#')
+            .circle-tile-heading.purple
+              i.fa.fa-comments.fa-fw.fa-3x
+          .circle-tile-content.purple
+            .circle-tile-description.text-faded
+              | Mentions
+            .circle-tile-number.text-faded
+              | 96
+              span#sparklineD
+            a.circle-tile-footer(href='#')
+              | More Info 
+              i.fa.fa-chevron-circle-right
+    .row
+      .col-lg-3
+        .tile.tile-img.tile-time.morning(style='height: 200px')
+          p.time-widget
+            span.time-widget-heading It Is Currently
+            br
+            strong
+              span#datetime
+                | Friday
+                br
+                | March 17th, 2017
+                br
+                | 12:43:17 PM
+      .col-lg-9
+  // page-wrapper END
+// container-1 END
+script(src='js/jquery-3.1.1.js')
+script(src='js/bootstrap.js')
+script(type='text/javascript').
+  $(document).ready(function(){
+  $(".sidebar-toggle").click(function(){
+  $(this).hide();
+  $("#user-profil").show();
+  $("#hide-btn").show();
+  $(".container-2").css("width", "85%");
+  });
+  $("#hide-btn").click(function(){
+  $(this).hide();
+  $("#user-profil").hide();
+  $(".sidebar-toggle").show();
+  $(".container-2").css("width", "100%");
+  });
+  });
