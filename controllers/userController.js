@@ -50,5 +50,38 @@ module.exports = {
             isAuthenticated: req.isAuthenticated(),
             user : req.user
         });
+    },
+    getShowUser1 : function(req, res, next){
+        res.render('users/showUser',{
+            isAuthenticated: req.isAuthenticated(),
+            user : req.user
+        });
+    },
+    getShowUser: function (req, res, next) {
+        //pasamos la configuracion de la base de datos
+        var config = require('.././database/config');
+        //creamos la coneccion a la base de datos 
+        var url = config.url;
+        console.log(`> BD: ${url}`);
+        mongo.connect(url, function (err, db) {
+            if (err) throw err
+            var collection = db.collection('Users')
+            collection.find().toArray(function (err, documents, fields) {
+                if (err) throw err;
+                //se imprimen los documentos encontrados 
+                console.log(`------- datos${documents}`);
+                console.log(JSON.stringify(documents));
+                //se cierra la conexion a la base de datos
+
+                console.log('lo que envia de items');
+                //) console.log (`${items}`);
+                db.close();
+                res.render('users/showUser', {
+                    isAuthenticated: req.isAuthenticated(),
+                    user: req.user,
+                    items: documents
+                });
+            });
+        });
     }
 };

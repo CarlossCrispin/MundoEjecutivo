@@ -1,0 +1,19 @@
+.panel-default{
+    background-color: #34495E;
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px; 
+    margin: 20px 20px 20px 20px;
+    background-repeat:no-repeat;
+    background-size:cover;
+        
+}
+.panel-heading{
+    background-color: #34495E;
+    color: #34495E;
+    padding-top: 4px;
+    padding-bottom: 4px; 
+    margin: 5px 5px 5px 5px;
+    background-repeat:no-repeat;
+    background-size:cover; 
+}

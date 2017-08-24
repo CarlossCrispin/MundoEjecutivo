@@ -57,7 +57,7 @@ body{background-color: #ecf0f1;}
 .container-1{display: none;}
 /*navbar-right=====START==========*/
 
-.social-icon{margin:0px;padding:0px;}
+.social-icon{margin:15px;padding:0px;}
 .social-icon li {margin: 0px;padding: 0px;list-style-type: none;}
 .social-icon li a {
     display: block;

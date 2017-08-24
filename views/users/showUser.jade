@@ -1,0 +1,31 @@
+extends ../templates/default
+include ../templates/nav
+block content
+    h1 entro
+    div(class='row')
+        div(class='col-md-8 col-md-offset-2')
+            h1(aling = "center")='Usuarios Registrados'
+            table(class="table table-striped")
+                    thead(bgcolor="darkcyan")
+                        tr
+                            td   Nombre
+                            td Email
+                            td password
+                            td password1
+                            
+                    tbody(bgcolor="cyan" )
+                        each item, i in items
+                            tr
+                                td= item.nombre
+                                td= item.email
+                                td= item.password
+                                td= item.password1
+            div(class="col-md-3 col-md-offset-2")
+                table(class="table table-striped")
+                    thead()
+                    tr
+                        th        
+                            button(type="button" onclick="location.href='/users/panel'" name="boton" class="btn btn-primary")="Regresar"
+                        th
+                            button(type="button" onclick="javascript:window.print()"  class="btn btn-primary")="Imprimir"
+                                

@@ -1,6 +1,6 @@
 
-a.sidebar-toggle(href='javascript:;' style='font-size:28px;color:#2C3E50')
-  i.fa.fa-caret-square-o-down='  Deslizar Panel'
+a.sidebar-toggle(href='javascript:;' style='font-size:18px;color:#2C3E50')
+  i.fa.fa-caret-square-o-down='  Monstrar Panel'
 span#hide-btn.close-btn
   i.fa.fa-times(aria-hidden='true')
 #user-profil.container-1
@@ -22,22 +22,27 @@ span#hide-btn.close-btn
               i.glyphicon.glyphicon-search
     li.dashboard
       a.active(href='/users/panel')
-        i.fa.fa-dashboard
+        i.fa.fa-bars
         |  Tablero
     li.panel
       a(href='javascript:;', data-toggle='collapse', data-target='#charts')
-        i.fa.fa-bar-chart-o
-        |  carrucel 
+        i.fa.fa-users
+        |  Usuarios 
         i.fa.fa-caret-down.pull-right
       ul#charts.collapse.nav
         li
-          a(href='#')
+          a(href='/users/showUser')
+       
             i.fa.fa-angle-double-right
-            |  video
+            |  Mostrar Usuarios
         li
           a(href='#')
             i.fa.fa-angle-double-right
-            |  Usuarios
+            |  Modificar Usuario
+        li
+          a(href='#')
+            i.fa.fa-angle-double-right
+            |  Eliminar Usuario
     li.panel
       a(href='javascript:;', data-toggle='collapse', data-target='#calendar')
         i.fa.fa-calendar

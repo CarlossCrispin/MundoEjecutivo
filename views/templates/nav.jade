@@ -9,25 +9,6 @@ nav#top-nav.navbar.navbar-inverse.top-navbar
     span#hide-btn.close-btn
       i.fa.fa-times(aria-hidden='true')
         
-    ul(class="nav navbar-nav navbar-right")
-      if !isAuthenticated
-        li
-          a(href="/auth/signup" class="")=' Registrarse'
-        li
-          a(href="/auth/signin" class=" ")= '  Iniciar Sesión'
-      if isAuthenticated
-        li(class="dropdown")
-          a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-          aria-haspopup="true" aria-expanded="false" class="")= user.nombre
-            span(class="caret")
-              ul(class="dropdown-menu")
-                li
-                  a(href="/users/panel")='Perfil'
-                li
-                  a(href="/auth/logout")= 'Cerrar Sesión'
-                    
-        
-
     ul.social-icon.pull-right.list-inline
       li.dropdown
         a.messages-link.dropdown-toggle(data-toggle='dropdown', href='#')
@@ -83,5 +64,21 @@ nav#top-nav.navbar.navbar-inverse.top-navbar
             .input-group-btn
               button.btn.btn-default(type='submit')
                 i.glyphicon.glyphicon-search
-      
+      ul(class="nav navbar-nav navbar-right")
+        if !isAuthenticated
+          li
+            a(href="/auth/signup" class="")=' Registrarse'
+          li
+            a(href="/auth/signin" class=" ")= '  Iniciar Sesión'
+        if isAuthenticated
+          d(class="dropdown")
+            a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false" class="" style='font-size:28px;color:#fff')= user.nombre
+              span(class="caret")
+              ul(class="dropdown-menu")
+                a.sidebar-toggle(href="/users/panel" )
+                  i.fa.fa-user(style='font-size:18px;color:#2C3E50')=' Perfil '
+                a.sidebar-toggle(href="/auth/logout")
+                  i.fa.fa-user-times(style='font-size:18px;color:#2C3E50')=' Salir'
+    
 
