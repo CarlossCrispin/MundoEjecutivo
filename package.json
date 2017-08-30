@@ -18,6 +18,10 @@
     "morgan": "~1.8.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "vue": "^2.4.2"
+  },
+    "browser": {
+    "vue": "vue/dist/vue.common.js"
   }
 }

@@ -38,11 +38,11 @@ module.exports = function (passport) {
                         return done(null,{
                             _id : user._id,
                             nombre : user.nombre,
-                            email : user.email
+                            email : user.email,
+                            img : user.img
                         });
                     }
                 }
-               
                 return done(null, false, req.flash('authmessage','Email o Password incorrecto.'));
             });
         });

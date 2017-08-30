@@ -1,0 +1,16 @@
+extends ../templates/default
+
+block content  
+    h1 Gráfica 1
+    script(src='https://unpkg.com/vue/dist/vue.min.js')
+    script(src='https://unpkg.com/highcharts/highcharts.js')
+    // vue-highcharts should be load after Highcharts
+    script(src='https://unpkg.com/vue-highcharts/dist/vue-highcharts.min.js')
+    
+    .container
+        .row
+            .col-md-offset-2
+            #app
+                highcharts(:options='options', ref='highcharts')
+            //button(@click='updateCredits') update credits
+            script(src='../images/grafic1.js')

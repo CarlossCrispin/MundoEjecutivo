@@ -1,0 +1,214 @@
+body {
+    font-family: 'Mada', sans-serif;
+    background: #222;
+  }
+  
+  #app {
+    text-align: center;
+    max-width: 400px;
+    margin: 30px auto;
+    display: table;
+  }
+  
+  span {
+    color: white;
+  }
+  
+  svg {
+    width: 400px;
+  }
+  svg text {
+    fill: grey;
+    font-family: 'Mada', sans-serif;
+  }
+  
+  line {
+    stroke: #555;
+    stroke-width: 2px;
+  }
+  
+  select {
+    font-family: 'Mada', sans-serif;
+    background: #444;
+    color: #ccc;
+    border: 0;
+    width: 200px;
+    margin: 0 0 25px;
+    outline: 0;
+    cursor: pointer;
+    height: 35px;
+  }
+  select option {
+    font-family: 'Mada', sans-serif;
+  }
+  
+  .xaxis {
+    -webkit-transform: translate(20px, 370px);
+            transform: translate(20px, 370px);
+  }
+  
+  .yaxis {
+    -webkit-transform: translate(20px, 0px) rotate(90deg);
+            transform: translate(20px, 0px) rotate(90deg);
+  }
+  
+  .bars:nth-child(1) rect {
+    fill: #666666;
+  }
+  
+  .bars:nth-child(2) rect {
+    fill: #6a5e6e;
+  }
+  
+  .bars:nth-child(3) rect {
+    fill: #725775;
+  }
+  
+  .bars:nth-child(4) rect {
+    fill: #7d4f7a;
+  }
+  
+  .bars:nth-child(5) rect {
+    fill: #854777;
+  }
+  
+  .bars:nth-child(6) rect {
+    fill: #8c4070;
+  }
+  
+  .bars:nth-child(7) rect {
+    fill: #943863;
+  }
+  
+  .bars:nth-child(8) rect {
+    fill: #9c3052;
+  }
+  
+  .bars:nth-child(9) rect {
+    fill: #a3293c;
+  }
+  
+  .bars:nth-child(10) rect {
+    fill: #ab2121;
+  }
+  
+  .bars:nth-child(11) rect {
+    fill: #b3311a;
+  }
+  
+  .bars:nth-child(12) rect {
+    fill: #ba4612;
+  }
+  
+  .bars:nth-child(13) rect {
+    fill: #c2600a;
+  }
+  
+  .bars:nth-child(14) rect {
+    fill: #c97f03;
+  }
+  
+  .bars:nth-child(15) rect {
+    fill: #cc9f00;
+  }
+  
+  .bars:nth-child(16) rect {
+    fill: #ccbf00;
+  }
+  
+  .bars:nth-child(17) rect {
+    fill: #b9cc00;
+  }
+  
+  .bars:nth-child(18) rect {
+    fill: #99cc00;
+  }
+  
+  .bars:nth-child(19) rect {
+    fill: #79cc00;
+  }
+  
+  .bars:nth-child(20) rect {
+    fill: #59cc00;
+  }
+  
+  .bars:nth-child(21) rect {
+    fill: #39cc00;
+  }
+  
+  .bars:nth-child(22) rect {
+    fill: #1acc00;
+  }
+  
+  .bars:nth-child(23) rect {
+    fill: #00cc06;
+  }
+  
+  .bars:nth-child(24) rect {
+    fill: #00cc26;
+  }
+  
+  .bars:nth-child(25) rect {
+    fill: #00cc46;
+  }
+  
+  .bars:nth-child(26) rect {
+    fill: #00cc66;
+  }
+  
+  .bars:nth-child(27) rect {
+    fill: #00cc86;
+  }
+  
+  .bars:nth-child(28) rect {
+    fill: #00cca6;
+  }
+  
+  .bars:nth-child(29) rect {
+    fill: #00ccc6;
+  }
+  
+  .bars:nth-child(30) rect {
+    fill: #00b3cc;
+  }
+  
+  .bars:nth-child(31) rect {
+    fill: #0093cc;
+  }
+  
+  .bars:nth-child(32) rect {
+    fill: #0073cc;
+  }
+  
+  .bars:nth-child(33) rect {
+    fill: #0053cc;
+  }
+  
+  .bars:nth-child(34) rect {
+    fill: #0033cc;
+  }
+  
+  .bars:nth-child(35) rect {
+    fill: #0013cc;
+  }
+  
+  .bars:nth-child(36) rect {
+    fill: #0d00cc;
+  }
+  
+  .bars:nth-child(37) rect {
+    fill: #2d00cc;
+  }
+  
+  .bars:nth-child(38) rect {
+    fill: #4d00cc;
+  }
+  
+  .bars:nth-child(39) rect {
+    fill: #6c00cc;
+  }
+  
+  .bars:nth-child(40) rect {
+    fill: #8c00cc;
+  }
+  

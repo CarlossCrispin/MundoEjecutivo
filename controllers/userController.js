@@ -1,5 +1,7 @@
 var mongo = require('mongodb').MongoClient;
 var bcrypt = require('bcryptjs');
+var Vue = require('vue');
+
 //const panels = document.querySelectorAll('.panel');
 module.exports = {
 
@@ -16,7 +18,8 @@ module.exports = {
             email : req.body.email,
             nombre : req.body.nombre,
             password : password,
-            password1 : req.body.password
+            password1 : req.body.password,
+            img:src=('../images/avatar.png')
 
         };
          //pasamos la configuracion de la base de datos
@@ -82,6 +85,51 @@ module.exports = {
                     items: documents
                 });
             });
+        });
+    }
+   /* upImgUser: function(req, res, next){
+        var config = require('.././database/config');
+        console.log("-----------------------");
+           mongo.connect(config.url, function (err, db) {
+               if (err) {
+                   return console.error(err)
+               }
+               //accedo a la coleccion con parrots 
+               db.collection('Users').find({
+                   email: email}).toArray(function (err, documents, fields) {
+                    if (err) throw err;
+                    
+                   //se imprimen los documentos encontrados 
+                   console.log(documents)
+                   //se cierra la conexion a la base de datos
+                   db.close();
+                   if(documents.length > 0){
+                       var user = documents[0];
+                       if(bcrypt.compareSync(password, user.password)){
+                           return done(null,{
+                               _id : user._id,
+                               nombre : user.nombre
+                           });
+                       }
+                   }
+                  
+               });
+           });
+
+    }*/,
+    getTable: function(req, res, next){
+        res.render('users/showTable', {
+                   
+            isAuthenticated: req.isAuthenticated(),
+            user: req.user
+        });
+    },
+    getGrafic1: function(req, res, next){
+        
+        res.render('users/showGrafic1', {
+                   
+            isAuthenticated: req.isAuthenticated(),
+            user: req.user
         });
     }
 };

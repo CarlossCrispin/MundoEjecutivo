@@ -16,6 +16,10 @@ router.post('/auth/signin', passport.authenticate('local',{
 router.get('/auth/logout', controllers.userController.logout);
 router.get('/users/panel',AuthMiddleware.isLogged, controllers.userController.getUserPanel)
 router.get('/users/showUser',AuthMiddleware.isLogged, controllers.userController.getShowUser)
+router.get('/users/showUser',AuthMiddleware.isLogged, controllers.userController.getShowUser)
+router.get('/users/showTable',AuthMiddleware.isLogged, controllers.userController.getTable)
+router.get('/users/showGrafic1',AuthMiddleware.isLogged, controllers.userController.getGrafic1)
+
 
 
 module.exports = router;
