@@ -13,7 +13,7 @@ var refGrupos = firebase.database().ref('Zonzamas/grupos');
 //Definir un componente llamado demo grid
 Vue.component('demo-grid', {
   template: '#grid-template',   //definir el id de la plantilla del componente
-  replace: true, //no tengo claro este parámetro
+   //no tengo claro este parámetro
   props: { //datos que se le van a pasar al componente
     data: Array,
     columnas: Array,

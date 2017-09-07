@@ -19,7 +19,7 @@ module.exports = {
             nombre : req.body.nombre,
             password : password,
             password1 : req.body.password,
-            img:src=('../images/avatar.png')
+            img:src=('../images/per.jpg')
 
         };
          //pasamos la configuracion de la base de datos
@@ -39,14 +39,14 @@ module.exports = {
          });
          //cuando se registre muestra mesj flash
         req.flash('info','Se ha registrado correctamente, ya puede iniciar sesión ');
-         return res.redirect('/auth/signin');
+         return res.redirect('/');
     },
     getSignIn: function(req, res , next){
-        return res.render('users/signin',{ message: req.flash('info'), authmessage : req.flash('authmessage')});
+        return res.render('/',{ message: req.flash('info'), authmessage : req.flash('authmessage')});
     },
     logout : function(req, res, next){
         req.logout();
-        res.redirect('/auth/signin');
+        res.redirect('/');
     },
     getUserPanel : function(req,res,next){
         res.render('users/panel',{

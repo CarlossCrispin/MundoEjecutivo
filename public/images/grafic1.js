@@ -6,7 +6,7 @@ var options = {
     x: -20 //center
   },
   subtitle: {
-    text: 'Source: Mundo ejecutivo on.line',
+    text: 'Source: Mundo Ejecutivo on.line',
     x: -20
   },
   xAxis: {
@@ -25,7 +25,7 @@ var options = {
     }]
   },
   tooltip: {
-    valueSuffix: '°C'
+    valueSuffix: '$'
   },
   legend: {
     layout: 'vertical',
@@ -55,7 +55,6 @@ var vm = new Vue({
   },
   methods: {
   	updateCredits: function() {
-    	var chart = this.$refs.highcharts.chart;
       chart.credits.update({
         style: {
           color: '#' + (Math.random() * 0xffffff | 0).toString(16)

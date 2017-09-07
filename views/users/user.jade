@@ -13,13 +13,7 @@ span#hide-btn.close-btn
       p
         a(href="/users/panel" class="" style='font-size:28px;color:#fff')= user.nombre +"  "
           i.fa.fa-caret-square-o-up
-    li.nav-search
-      form.navbar-form
-        .input-group
-          input.form-control(type='text', placeholder='Search')
-          .input-group-btn
-            button.btn.btn-default(type='submit')
-              i.glyphicon.glyphicon-search
+    
     li.dashboard
       a.active(href='/users/panel')
         i.fa.fa-bars
@@ -228,19 +222,7 @@ span#hide-btn.close-btn
             a.circle-tile-footer(href='#')
               | More Info 
               i.fa.fa-chevron-circle-right
-    .row
-      .col-lg-3
-        .tile.tile-img.tile-time.morning(style='height: 200px')
-          p.time-widget
-            span.time-widget-heading It Is Currently
-            br
-            strong
-              span#datetime
-                | Friday
-                br
-                | March 17th, 2017
-                br
-                | 12:43:17 PM
+    
       .col-lg-9
     script(type='text/javascript').
       $(document).ready(function(){
